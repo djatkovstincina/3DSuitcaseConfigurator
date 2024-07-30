@@ -1,9 +1,9 @@
-# syntaxweb
+# Syntax Web
 syntaxweb interview
 
-# 3D Suitcase Configurator
+## 3D Suitcase Configurator
 
-## Project Setup
+### Project Setup
 
 1. **Install Dependencies**
    ```sh
