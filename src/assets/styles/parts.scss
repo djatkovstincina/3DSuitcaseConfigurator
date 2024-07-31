@@ -1,0 +1,58 @@
+.o-parts {
+    position: absolute;
+    bottom: 82px;
+    left: calc(50% - 296px);
+    width: 606px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 32px;
+
+
+    .c-partBtn {
+        display: inline-flex;
+        padding: 12px 24px 12px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        background: #FFF;
+        color: #121010;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+
+        &--circle {
+            position: relative;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #121010;
+        }
+
+        &.active {
+
+            .c-partBtn--circle {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    background: #121010;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,13 @@
 import React from 'react';
+import classNames from 'classnames';
 
-const AnimationsButton = ({ onClick }) => {
+const AnimationsButton = ({ onClick, className }) => {
   return (
-    <button onClick={onClick}>Animations</button>
+    <button
+      type="button"
+      onClick={onClick}
+      className={classNames('c-configBtn', className)}
+    >Animations</button>
   );
 };
 

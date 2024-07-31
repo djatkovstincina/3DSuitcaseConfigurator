@@ -1,0 +1,22 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+#container3d {
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (max-width: 768px) {
+    #container3d {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 769px) {
+    #container3d {
+        height: 100vh;
+        width: 100vw;
+    }
+}

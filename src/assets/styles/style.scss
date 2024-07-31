@@ -1,18 +1,3 @@
-#container3d_replace {
-    height: 100vh;
-    width: 100vw;
-}
-
-@media (max-width: 768px) {
-    #container3d_replace {
-        height: 100vh;
-        width: 100vw;
-    }
-}
-
-@media (min-width: 769px) {
-    #container3d_replace {
-        height: 100vh;
-        width: 100vw;
-    }
-}
+@import "./global.scss";
+@import "./tabs.scss";
+@import "./parts.scss";

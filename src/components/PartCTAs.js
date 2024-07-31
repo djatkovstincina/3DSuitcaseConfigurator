@@ -1,14 +1,23 @@
 import React from 'react';
+import classNames from 'classnames';
 
-const PartCTAs = ({ onSelectPart }) => {
+function PartCTAs({ activePart, setActivePart }) {
+  const parts = ["body", "handles", "corners", "wheels"];
+
   return (
-    <div>
-      <button onClick={() => onSelectPart('body')}>Body</button>
-      <button onClick={() => onSelectPart('handles')}>Handles</button>
-      <button onClick={() => onSelectPart('corners')}>Corners</button>
-      <button onClick={() => onSelectPart('wheels')}>Wheels</button>
+    <div className="o-parts">
+      {parts.map((part, index) => (
+        <button
+          key={index}
+          onClick={() => setActivePart(part)}
+          className={classNames('c-partBtn', (activePart === part ? "active" : ""))}
+        >
+          <span className="c-partBtn--circle"></span>
+          {part}
+        </button>
+      ))}
     </div>
   );
-};
+}
 
 export default PartCTAs;
