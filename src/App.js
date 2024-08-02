@@ -37,7 +37,11 @@ function App() {
           className={ activeTab === "animation" ? 'active' : '' }
         />
       </div>
-      {activeTab === "configurator" && <PartCTAs activePart={activePart} setActivePart={setActivePart} />}
+      {activeTab === "configurator" && (
+        <>
+          <PartCTAs activePart={activePart} setActivePart={setActivePart} />
+        </>
+      )}
     </>
   );
 }
