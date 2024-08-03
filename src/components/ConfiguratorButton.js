@@ -7,7 +7,10 @@ const ConfiguratorButton = ({ onClick, className }) => {
       type="button"
       onClick={onClick}
       className={classNames('c-configBtn', className)}
-    >Configurator</button>
+      aria-label="Configurator"
+    >
+      Configurator
+    </button>
   );
 };
 

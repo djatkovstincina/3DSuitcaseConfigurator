@@ -1,17 +1,26 @@
 .o-parts {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 82px;
-    left: calc(50% - 296px);
-    width: 606px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: center;
     justify-items: center;
-    grid-column-gap: 32px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    
+    @media (min-width: 768px) {
+        bottom: 82px;
+        width: 606px;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 32px;
 
+    }
 
     .c-partBtn {
-        display: inline-flex;
+        display: flex;
+        width: 100%;
         padding: 12px 24px 12px 16px;
         justify-content: center;
         align-items: center;
@@ -29,6 +38,10 @@
         border: none;
         cursor: pointer;
         outline: inherit;
+
+        @media (min-width: 768px) {
+            width: auto;
+        }
 
         &--circle {
             position: relative;
