@@ -40,7 +40,7 @@ function PartConfigurator({ activePart, setActivePart, colors, handleColorSelect
               <div key={index} className="color-option">
                 <img
                   onClick={() => handleColorClick(color.value, color.name)}
-                  src={color.background} // Add a proper image source if available
+                  src={color.background}
                   alt={color.name}
                   className={`c-configurator--icon ${selectedMaterial === color.name ? 'selected' : ''}`}
                 />

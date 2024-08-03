@@ -17,6 +17,7 @@ const ThreeDConfigurator = forwardRef((props, ref) => {
     };
 
     const config = {
+      cameraControl: { autoRotate: true },
       camera: checkDevice() === 'desktop' ? 'Camera Desktop' : 'Camera Mobile'
     };
 
